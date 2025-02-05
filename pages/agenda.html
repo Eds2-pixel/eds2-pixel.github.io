@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Mon Site Personnel</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mon Site Personnel</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html"class="active">Accueil</a></li>
+				<li><a href="agenda.html" class="active">Agenda</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="photo.html">Photo</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <table>
+            <tr>
+                <th>Horaires</th>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+            </tr>
+            <tr>
+                <td class="rien">8h-10h</td>
+                <td class="anglais">Anglais</td>
+				<td class="rien"></td>
+                <td class="bases-de-donnees ">bases de<br></br>donnees </td>
+                <td class="Technologies-du-web "rowspan="2">Technologies du<br></br>web </td>
+                <td class="programmation"rowspan="2">Programmation</td>
+            </tr>
+            <tr>
+                <td class="rien">10h-12h</td>
+                <td class="reseaux">Réseaux</td>
+				<td class="algorithmique">Algorithmique</td>
+				 <td class="genie-logiciel">Génie Logiciel</td>
+            </tr>
+			    <td class="vide"colspan="6"> </td>
+            <tr>
+			
+                <td rowspan="2" class="rien">13h-15h
+                <br></br><br></br> 15h-17h</td>
+                <td class="bases-de-donnees"rowspan="2" >bases de <br></br> donnees</td>
+                <td class="programmation"rowspan="2">Programmation</td>
+                <td class="systemes">Systèmes</td>
+				<td rowspan="2" class="sport"> sport</td>
+				
+                 <td class = "anglais">Anglais</td>
+                      <tr>
+                             <td class="rien"></td>
+                             <td class="rien"></td>
+                
+           
+        </table>
+		<div class="legend">
+    <h2>Légende</h2>
+    <ul>
+      <li><span class="anglais"></span> Anglais</li>
+      <li><span class="reseaux"></span> Réseaux</li>
+      <li><span class="bases-de-donnees"></span> Bases de données</li>
+      <li><span class="algorithmique"></span> Algorithmique</li>
+      <li><span class="genie-logiciel"></span> Génie Logiciel</li>
+      <li><span class="programmation"></span> Programmation</li>
+      <li><span class="systemes"></span> Systèmes</li>
+      <li><span class="sport"></span> Sport</li>
+      <li><span class="Technologies-du-web"></span> Technologies du Web</li>      
+    </ul>
+  </div>
+
+    </section>
+    </main>
+	 <!-- Pied de page -->
+    <footer>
+        <p>mon site personnel.</p>
+        <p>&copy; RIBGOLONGO Edson Rodolphe 2025</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+  
+  <style>
+body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #0056b3;
+            color: #333;
+			
+
+        }
+h1 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: none;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: none;
+    }
+	
+  .anglais { background-color: #FFA07A; }
+    .reseaux { background-color: #FFB6C1; }
+    .algorithmique { background-color: #FFD700; }
+    .bases-de-donnees { background-color: #DDA0DD !important; }
+    .genie-logiciel { background-color: #FF6347; }
+    .Technologies-du-web { background-color: #32CD32 !important; }
+    .programmation { background-color: #98FB98; }
+    .systemes { background-color: #A52A2A !important; }
+    .sport { background-color: #008000; }
+    .vide { background-color: #d3d3d3;}
+	.rien{background-color:#87ceeb;}
+
+.legend {
+      margin-top: 40px;
+
+    }
+
+    .legend h2 {
+      text-align: center;
+    }
+
+    .legend ul {
+	  display:grid;
+	  grid-template-columns:repeat(3,1fr);
+	  gap:10px;
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .legend li {
+      margin: 10px 0;
+    }
+
+    .legend span {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      margin-right: 10px;
+      border-radius: 0;
+    }
+ </style>
+</head>
