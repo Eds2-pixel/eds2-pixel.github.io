@@ -114,93 +114,127 @@
 </body>
 </html>
 <style>
-	body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #0056b3;
+	color: blue;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
+    margin: 30px auto;
+    background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+	color:white;
 }
 
-header h1 {
-    font-size: 2.5em;
+.header h1 {
+    font-size: 24px;
+    color:#1a237e;
     margin: 0;
-    color: #2c3e50;
+		
 }
 
-header p {
-    font-size: 1.2em;
-    color: #7f8c8d;
+.header h2 {
+    font-size: 18px;    
+    margin: 0;
 }
 
-section {
-    margin-bottom: 20px;
+.section {
+    margin-top: 20px;
 }
 
-section h2 {
-    font-size: 1.8em;
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color:#1a237e;
     margin-bottom: 10px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 5px;
 }
 
-section ul {
-    list-style-type: none;
+.info {
+    font-size: 14px;
+    color: blue;
+    line-height: 1.6;
+}
+
+.timeline {
+    list-style: none;
     padding: 0;
+	color: blue;
 }
 
-section ul li {
-    background: #ecf0f1;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 4px;
+.timeline li {
+    margin-bottom: 10px;
+	color: blue;
 }
 
-section ul li strong {
-    color: #3498db;
+.timeline li span {
+    font-weight: bold;
+	color: blue;
 }
 
-.languages ul {
+.skills {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+	color: blue;
 }
 
-.languages ul li {
-    flex: 1 1 45%;
-    margin: 5px;
-    background: #ecf0f1;
-    padding: 10px;
-    border-radius: 4px;
-    text-align: center;
-}
-
-.atouts ul {
+.skill-bar {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+	color: blue;
 }
 
-.atouts ul li {
-    flex: 1 1 45%;
-    margin: 5px;
-    background: #ecf0f1;
-    padding: 10px;
-    border-radius: 4px;
+.skill-bar span {
+    flex: 1;
+    font-size: 14px;
+    color: blue;
+}
+
+.skill-bar div {
+    height: 8px;
+    flex: 3;
+    background: #eaeaea;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+	color: blue;
+}
+
+.skill-bar div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #1a237e;
+	color: blue;
+}
+
+.skill-bar div[data-level="80"]::after { width: 80%; }
+.skill-bar div[data-level="60"]::after { width: 60%; }
+.skill-bar div[data-level="100"]::after { width: 100%; }
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
     text-align: center;
+	color: blue;
 }
 </style>
