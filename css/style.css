@@ -261,10 +261,11 @@ button:hover::after {
     overflow-x: auto;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-lg);
+	 width: 800%;
 }
 
 table {
-    width: 50%;
+    width: 800%;
     border-collapse: separate;
     border-spacing: 0;
     background: #90ee90;
@@ -274,7 +275,8 @@ table {
 th, td {
     padding: 1.25rem;
     text-align: left;
-    border:solid;
+    border:solid; 
+    width:auto;
 }
 
 th {
