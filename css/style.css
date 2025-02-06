@@ -264,7 +264,7 @@ button:hover::after {
 }
 
 table {
-    width: 100%;
+    width: 50%;
     border-collapse: separate;
     border-spacing: 0;
     background: #90ee90;
