@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Site Personnel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow:none; /* permet le defilement  */
+        }
+    
+        /* Vidéo en arrière-plan */
+        video {
+            position: sticky ; /* la video est^positioné en fonction du defilement*/
+            top: 0;
+            left: 0;
+            width: 100%; /* La vidéo couvre toute la largeur */
+            height: 100%; /* La vidéo couvre toute la hauteur */
+            object-fit: cover; /* Ajuste la vidéo sans déformer */
+            z-index: -1; /* Place la vidéo derrière le contenu */
+        }
+    
+        /* Contenu par-dessus la vidéo */
+        .content {
+            position: sticky;
+            z-index: 1; /* Place le contenu au-dessus de la vidéo */
+            color: rgba(216, 226, 15, 0.871);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon Site Personnel</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="active">Accueil</a></li>
+				<li><a href="agenda.html">Agenda</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="photo.html">Photo</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<section id="contact">
+        <legend><h2>Contact</h2></legend>
+        <div class="contact-form">
+            <label for="reason">Pourquoi voulez-vous nous contacter ?</label>
+            <select id="reason" name="reason">
+                <option value="question">Question</option>
+                <option value="feedback">Retour</option>
+                <option value="collaboration">Collaboration</option>
+            </select> <br></br>
+
+            <label for="email">Votre email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse email"> <br></br>
+
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" rows="4" placeholder="Écrivez votre message ici..."></textarea> <br></br>
+        </div>
+    </section> <br></br> 
+	<button type="submit">Envoyer</button> <br></br> <br></br> <br></br> <br></br> <br></br> 
+    </main> <br></br><br></br>
+	<footer>
+        <p>mon site personnel.</p>
+        <p>&copy; RIBGOLONGO Edson Rodolphe 2025</p>
+    </footer>
+	 
+    <!-- Vidéo en arrière-plan -->
+    <video autoplay loop muted>
+        <source src="2.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos HTML5.
+    </video> <br></br><br></br>
+	 
+</body>
+</html>
