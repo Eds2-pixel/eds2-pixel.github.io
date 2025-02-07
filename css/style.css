@@ -269,6 +269,8 @@ table {
     border-spacing: 0;
     background: #90ee90;
 	border :solid;
+	max-width:100%;
+	overflow-x:auto;
 }
 
 th, td {
